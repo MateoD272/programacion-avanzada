@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Musical - Tu Portal de Música</title>
+    <style>
+        /* Estilos básicos para que la página se vea limpia */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1e1e24;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2b2d42;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4ea8de;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2b2d42;
+            border-bottom: 2px solid #4ea8de;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1e1e24;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Mundo Musical</h1>
+        <p>Descubre, escucha y siente el ritmo</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#generos">Géneros</a>
+        <a href="#reproductor">Escuchar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>La música es el arte de coordinar y transmitir una combinación de sonidos y silencios utilizando los principios fundamentales de la melodía, la armonía y el ritmo.</p>
+        </section>
+
+        <!-- Sección de Géneros -->
+        <section id="generos">
+            <h2>Géneros Populares</h2>
+            <ul>
+                <li><strong>Rock:</strong> Ritmo fuerte, guitarras eléctricas y mucha energía.</li>
+                <li><strong>Jazz:</strong> Improvisación, ritmos complejos y armonías ricas.</li>
+                <li><strong>Pop:</strong> Melodías pegajosas diseñadas para el gran público.</li>
+                <li><strong>Música Clásica:</strong> Estructuras complejas e instrumentación orquestal.</li>
+                <li><strong>Urbano / Reggaeton:</strong> Ritmos bailable con fuerte presencia de bajos.</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Reproducción -->
+        <section id="reproductor">
+            <h2>Muestra de Audio</h2>
+            <p>Haz clic en reproducir para escuchar un fragmento de prueba:</p>
+            <!-- Reemplaza "audio-de-prueba.mp3" con la ruta de tu archivo de música -->
+            <audio controls>
+                <source src="audio-de-prueba.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <!-- Sección de Formulario/Contacto -->
+        <section id="contacto">
+            <h2>¿Cuál es tu canción favorita?</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="cancion">Nombre de la canción:</label><br>
+                    <input type="text" id="cancion" name="cancion" placeholder="Ej: Bohemian Rhapsody" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <p>
+                    <label for="artista">Artista / Banda:</label><br>
+                    <input type="text" id="artista" name="artista" placeholder="Ej: Queen" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </p>
+                <button type="submit" style="background-color: #2b2d42; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px;">Enviar recomendación</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Mundo Musical - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
